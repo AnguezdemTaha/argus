@@ -1,0 +1,15 @@
+node_modules/
+tools/node_modules/
+.local/
+.private/
+dist/
+*.credentials.json
+.env
+.env.*
+*.log
+*.tgz
+.vscode/tasks.json
+*.pem
+*.key
+*.pfx
+*.p12

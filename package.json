@@ -1,0 +1,26 @@
+{
+  "name": "argus-teams-mvp",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22.12.0" },
+  "scripts": {
+    "start": "node scripts/start.js",
+    "test": "node --test",
+    "setup": "node scripts/setup.js",
+    "targets": "node scripts/operator.js targets",
+    "preview": "node scripts/operator.js preview",
+    "send": "node scripts/operator.js send",
+    "tools:install": "npm --prefix tools ci",
+    "teams": "node scripts/teams.js",
+    "doctor": "node scripts/setup.js doctor",
+    "package": "node scripts/package.js",
+    "check:gemini": "node scripts/check-gemini-network.js",
+    "check:jira": "node scripts/check-atlassian-mcp.js",
+    "check:gitlab": "node scripts/check-gitlab-mcp.js"
+  },
+  "dependencies": {
+    "@microsoft/teams.apps": "2.1.0",
+    "fflate": "0.8.3"
+  }
+}
